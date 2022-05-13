@@ -47,3 +47,18 @@ describe('submitForm() tests', () => {
         expect(usernames).toContain('chickenGal')
     })
 })
+afterEach(function () {
+    input.value = '';
+    usernames = [];
+})
+
+beforeEach(() => {
+    console.log('BEFORE!')
+})
+
+beforeAll(() => {
+    console.log('BEFORE ALL')
+})
+afterAll(() => {
+    console.log('AFTER ALL')
+})

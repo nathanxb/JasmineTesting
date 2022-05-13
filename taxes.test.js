@@ -41,8 +41,8 @@ describe('remove Tests', function () {
 
 describe('submitForm() tests', () => {
     it('saves input val to usersnames array', () => {
-        InputDeviceInfo.
-            submitForm();
+        input.value = 'chickenGal';
+        submitForm();
         expect(usernames.length).toBe(1)
         expect(usernames).toContain('chickenGal')
     })
